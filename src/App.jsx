@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from "react";
 import {
   X,
@@ -17,7 +19,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import img from "./assets/Logo.svg";
-import "./app.css";
+import "./App.css";
 
 function App() {
   const [cryptoData, setCryptoData] = useState([]);
@@ -28,7 +30,7 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const itemsPerPage = 10;
 
-  // Mock historical data for the graph
+  //data for the graph
   const generateMockHistoricalData = () => {
     const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
     return days.map((day) => {
@@ -247,4 +249,8 @@ function App() {
   );
 }
 
+
 export default App;
+
+
+// design inspiration from Wahib iravan https://www.figma.com/community/file/988993272421138911/cryptoboard-cryptocurrency-dashboard
