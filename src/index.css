@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: #0B091A;
+    font-family: "DM Sans", sans-serif !important;
+}
+
+h1,h2,h3,h4,h5,h6, p, div{
+    font-family: "DM Sans", sans-serif !important;
+}
+
+.card-ctn{
+    background-color: #110E22;
+    border-radius: 8px;
+    color: #CCCCCC;
+}
+.top-text{
+    color: #CCCCCC;
+}
+
+.coin-name{
+    font-weight: 700;
+    font-size: 18px;
+    color: #7D67FF;
+}
+.coin-header{
+    font-weight: 700;
+    font-size: 28px;
+    color: #E1DFEC;
+}
+
+.card-card{
+    background: #131024;
+}
+.card-card {
+    color: #E1DFEC;
+}
+.coin-price {
+   font-size: 40px;
+}
+
+
+.top-cards{
+    color: #E1DFEC;
+    border: 1px solid rgba(255, 255, 255,0.1);
+    border-radius: 10px;
+}
+.top-cards:hover{
+    cursor: pointer;
+   background-color: #7D67FF;
+}
+.top-cards:hover .coin-name{
+   color: #fff;
+}
+
+.t-head{
+    color: rgba(255, 255, 255,0.5);
+}
+
+.t-row:hover{
+    background-color: #0B091A;
+   
+}
