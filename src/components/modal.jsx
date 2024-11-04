@@ -46,7 +46,7 @@ const CryptoModal = ({ isOpen, onClose, coin }) => {
           </button>
         </div>
 
-        <div className="p-6">
+        <div className="p-2">
           <div className="mb-6">
             <div className="flex items-center gap-4 mb-4">
               <span className="text-3xl font-bold text-gray-300">${formatNumber(coin.price_usd)}</span>
@@ -88,25 +88,25 @@ const CryptoModal = ({ isOpen, onClose, coin }) => {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-gray-700 p-4 rounded-lg">
                 <div className="text-gray-400 mb-1">Market Cap</div>
-                <div className="text-lg font-bold text-gray-300">
+                <div className="text-md font-bold text-gray-300">
                   {formatMarketCap(coin.market_cap_usd)}
                 </div>
               </div>
               <div className="bg-gray-700 p-4 rounded-lg">
                 <div className="text-gray-400 mb-1">24h Volume</div>
-                <div className="text-lg font-bold text-gray-300">
+                <div className="text-md font-bold text-gray-300">
                   ${formatNumber(coin.volume24)}
                 </div>
               </div>
               <div className="bg-gray-700 p-4 rounded-lg">
                 <div className="text-gray-400 mb-1">Available Supply</div>
-                <div className="text-lg font-bold text-gray-300">
+                <div className="text-md font-bold text-gray-300">
                   {formatNumber(coin.csupply)} {coin.symbol}
                 </div>
               </div>
               <div className="bg-gray-700 p-4 rounded-lg">
                 <div className="text-gray-400 mb-1">Total Supply</div>
-                <div className="text-lg font-bold text-gray-300">
+                <div className="text-md font-bold text-gray-300">
                   {formatNumber(coin.tsupply)} {coin.symbol}
                 </div>
               </div>

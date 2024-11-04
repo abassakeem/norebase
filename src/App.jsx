@@ -82,9 +82,11 @@ function App() {
 
   if (loading) {
     return (
-      <div className="w-full max-w-6xl mx-auto p-6 bg-white rounded-lg shadow">
-        <div className="text-center">Loading cryptocurrency data...</div>
+      <div className="min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-6xl mx-auto p-6 bg-transparent rounded-lg ">
+        <div className="text-center text-gray-300">CryptoBoard Loading cryptocurrency data...</div>
       </div>
+    </div>
     );
   }
 
